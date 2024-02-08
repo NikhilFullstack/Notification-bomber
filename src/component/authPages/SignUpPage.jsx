@@ -11,7 +11,7 @@ function SignUpPage() {
 
     const createUser = async (d)=>{
         try{
-            var userResponse = await fetch(`http://localhost:4000/api/createUser`,
+            var userResponse = await fetch(`https://schedule-notification.vercel.app/api/createUser`,
             {
                 method: "POST",
                 headers: {
