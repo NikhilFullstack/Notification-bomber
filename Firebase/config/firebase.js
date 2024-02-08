@@ -3,7 +3,12 @@ const { initializeApp } = require("firebase/app");
 const {getAuth, GoogleAuthProvider} = require('firebase/auth');
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
+// const admin = require('firebase-admin');
 
+// const serviceAccount = require('../friendify-b1bea-firebase-adminsdk-aqu5z-c17925718e.json');
+// admin.initializeApp({
+//   credential: admin.credential.cert(serviceAccount),
+// })
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDWuo3nxBvNwwWQr9mZne2dLa81xi9_jYU",

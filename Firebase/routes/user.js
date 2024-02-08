@@ -1,16 +1,15 @@
 const express = require("express");
 const router = express.Router();
 
-const {createUserWithPassword,createUserWithGoogle, getUserById, 
-    getUserByEmail, getAllUsers, logout } = 
+const {createUserWithPassword } = 
     require("../controller/user");
+const { sendMessage } = require("../controller/messaging");
 
 
 router.post("/createUser", createUserWithPassword);
-router.post("/googleAuth", createUserWithGoogle);
-router.get("/getUserById/:id", getUserById);
-router.get("/getUserByEmail/:email", getUserByEmail);
-router.get("getAllUser", getAllUsers);
+// router.get("/getUserById/:id", getUserById);
+// router.get("/getUserByEmail/:email", getUserByEmail);
+// router.get("/getAllUser", getAllUsers);
+router.get("/send", sendMessage);
 // router.put("/deleteUser", deleteUser);
-router.put("/logout", logout)
 module.exports = router
