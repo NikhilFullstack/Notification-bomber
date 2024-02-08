@@ -1,7 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import SignUpPage from './component/authPages/SignUpPage';
-import LoginPage from './component/authPages/LoginPage';
+import SignUpPage from './component/authPages/SignUpPage.jsx';
+import LoginPage from  './component/authPages/LoginPage.jsx';
 import MainPage from './component/hero/MainPage';
 import RedirectPage from './component/RedirectPage';
 
